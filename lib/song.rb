@@ -34,7 +34,7 @@ class Song
     #if self.all.any? { |song| song.name == name}
     #    binding.pry
     #end
-    binding.pry
+    #binding.pry
     song = self.all.select { |song| song.name == name }
     song[0]
   end

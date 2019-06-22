@@ -39,6 +39,8 @@ class Song
     #binding.pry
     if !find_by_name(name)
       create_by_name(name)
+    else
+      find_by_name
     end
   end
 

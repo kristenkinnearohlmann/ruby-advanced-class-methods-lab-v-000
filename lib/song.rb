@@ -55,6 +55,8 @@ class Song
     binding.pry
     song.artist_name = song_data[0]
     song.name = song_data[1]
+
+    song
   end
 
 end

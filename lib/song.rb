@@ -52,7 +52,7 @@ class Song
     song_data = filename.sub!(/.mp3/,'').split(' - ')
 
     song = self.create
-    pry
+    binding.pry
     song.name = song_data[0]
     song.artist_name = song_data[1]
   end

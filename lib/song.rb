@@ -49,8 +49,9 @@ class Song
   end
 
   def self.new_from_filename(filename)
+    filename.sub!(/.mp3/,'')
     binding.pry
-    filename.sub!(/.mp3/,'').split(' - ')
+    filename.split(' - ')
   end
 
 end

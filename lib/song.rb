@@ -52,7 +52,7 @@ class Song
     filename.sub!(/.mp3/,'')
     filename.split(' - ')
     song = new_by_name(filename[0])
-    song.artist = filename[1]
+    song.artist_name = filename[1]
   end
 
 end

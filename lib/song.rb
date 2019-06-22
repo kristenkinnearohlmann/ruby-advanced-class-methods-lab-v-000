@@ -35,7 +35,8 @@ class Song
     #    binding.pry
     #end
     binding.pry
-    self.all.select { |song| song.name == name}
+    song = self.all.select { |song| song.name == name}
+    song[0]
   end
 
 end

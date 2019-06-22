@@ -60,12 +60,12 @@ class Song
 
   def self.create_from_filename(filename)
     song_data = filename.sub!(/.mp3/,'').split(' - ')
-    
+
     song = self.create_by_name
     song.artist_name = song_data[0]
     song.name = song_data[1]
 
-    song    
+    song
   end
 
 end
